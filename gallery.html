@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Труман Шоу</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Труман Шоу</h1>
+            <p><em>1998 жылы шыққан америкалық ғылыми-фантастикалық драма фильмі</em></p>
+            <div class="rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="rating-text">8.1/10</span>
+                <span class="votes">(245,678 дауыс)</span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Басты бет</a></li>
+            <li><a href="about.html">Фильм туралы</a></li>
+            <li><a href="actors.html">Актерлер</a></li>
+            <li><a href="reviews.html">Пікірлер</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="index.html#feedback">Пікір қалдыру</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="gallery-page">
+            <h2>Фильм галереясы</h2>
+            
+            <div class="gallery-tabs">
+                <button class="tab-btn active" onclick="showGalleryTab('posters')">Постерлер</button>
+                <button class="tab-btn" onclick="showGalleryTab('behind')">Кадр арты</button>
+                <button class="tab-btn" onclick="showGalleryTab('actors')">Актерлер</button>
+            </div>
+
+            <div id="posters" class="gallery-tab-content active">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/4483445/ceb4574e-4b3b-43bf-a217-770d95c8afea/300x450" alt="Труман Шоу ресми постері">
+                        <div class="gallery-item-info">
+                            <h4>Ресми постер</h4>
+                            <p>1998 жылғы театральдық релиз</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/cacd01bb-57e3-4d93-b493-8805f8d0d1ff/220x330" alt="Халықаралық постер">
+                        <div class="gallery-item-info">
+                            <h4>Халықаралық постер</h4>
+                            <p>Еуропалық нұсқасы</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="behind" class="gallery-tab-content">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://external-preview.redd.it/the-climactic-wall-used-in-the-truman-show-spotted-on-a-v0-wUvuvH66Ef-GRZyap_Tr6a-FQgOfzMTBAiNSo7dIqLo.png?width=640&crop=smart&auto=webp&s=f4c7b44ec639297fca3f4828fb2431c529466219" alt="Съемочная площадка">
+                        <div class="gallery-item-info">
+                            <h4>Съемочная площадка</h4>
+                            <p>Фильмнің түсірілім процесі</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://tvtok.ru/upload/medialibrary/7f4/7f44b8f95134b8c580ff44e8262d8bc2.jpg" alt="Камералар">
+                        <div class="gallery-item-info">
+                            <h4>Камералар</h4>
+                            <p>Жасырын камералар жүйесі</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0bMMsYa6R09_RX5x4kAzq0Emo8aGb8WVO5w&s" alt="Питер Уир">
+                        <div class="gallery-item-info">
+                            <h4>Питер Уир</h4>
+                            <p>Режиссер мен актерлер бірге</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="actors" class="gallery-tab-content">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKOz-VXeuKi3V3YxFPbbYs9RA3qmQAaQZ6Kg&s" alt="Джим Керри">
+                        <div class="gallery-item-info">
+                            <h4>Джим Керри</h4>
+                            <p>Труман Бербанк рөлінде</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_3eL938bk-EhaqvBUenv3STlCoVjLEzGAVA&s" alt="Эд Харрис">
+                        <div class="gallery-item-info">
+                            <h4>Эд Харрис</h4>
+                            <p>Кристоф рөлінде</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Laura_Linney_Berlinale_2017.jpg" alt="Лора Линни">
+                        <div class="gallery-item-info">
+                            <h4>Лора Линни</h4>
+                            <p>Мэрил рөлінде</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Труман Шоу фильмі туралы сайт. Барлық құқықтар қорғалған.</p>
+        <p>Жасаған: Ильхан Хайроллиев</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

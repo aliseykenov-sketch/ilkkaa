@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пікірлер - Труман Шоу</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Труман Шоу</h1>
+            <p><em>1998 жылы шыққан америкалық ғылыми-фантастикалық драма фильмі</em></p>
+            <div class="rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="rating-text">8.1/10</span>
+                <span class="votes">(245,678 дауыс)</span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Басты бет</a></li>
+            <li><a href="about.html">Фильм туралы</a></li>
+            <li><a href="actors.html">Актерлер</a></li>
+            <li><a href="reviews.html">Пікірлер</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="index.html#feedback">Пікір қалдыру</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="reviews-page">
+            <h2>Барлық пікірлер</h2>
+            
+            <div class="filter-section">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterReviews('all')">Барлығы</button>
+                    <button class="filter-btn" onclick="filterReviews('positive')">Оң пікірлер</button>
+                    <button class="filter-btn" onclick="filterReviews('negative')">Теріс пікірлер</button>
+                    <button class="filter-btn" onclick="filterReviews('neutral')">Бейтарап</button>
+                </div>
+                <div class="sort-section">
+                    <label for="sort">Сұрыптау:</label>
+                    <select id="sort" onchange="sortReviews()">
+                        <option value="newest">Ең жаңасы</option>
+                        <option value="oldest">Ең ескісі</option>
+                        <option value="rating-high">Бағасы жоғары</option>
+                        <option value="rating-low">Бағасы төмен</option>
+                        <option value="helpful">Пайдалысы</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="reviews-stats">
+                <div class="stat-item">
+                    <span class="stat-number">245,678</span>
+                    <span class="stat-label">Жалпы дауыс</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">89%</span>
+                    <span class="stat-label">Ұсынады</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4.2</span>
+                    <span class="stat-label">Орташа баға</span>
+                </div>
+            </div>
+
+            <div class="reviews-container">
+                <div class="review" data-rating="10">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">А</div>
+                            <div>
+                                <div class="reviewer-name">Айгүл Смаилова</div>
+                                <div class="review-date">15.03.2024</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span>10/10</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Бұл - өмірбаянымдағы ең үздік фильм! Труманның өміріндегі жалғандықты ашу процесі өте қызықты. Джим Керри өз рөлін тамаша ойнады. Фильм адамның шындықты іздегісі келетінін көрсетеді. Әрбір кадр мағыналы, әрбір диалог ойландырады.</p>
+                        <p>Кристоф рөлінде Эд Харрис та керемет ойнады. Ол "Құдай" болғысы келетін режиссердің психологиясын тамаша көрсетті. Фильмнің соңғы сәттері мені әлі күнге дейін толғандырады.</p>
+                        <div class="review-helpful">
+                            <button class="helpful-btn">👍 Пайдалы (245)</button>
+                            <button class="helpful-btn">👎 Пайдалы емес (12)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review" data-rating="8">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">Б</div>
+                            <div>
+                                <div class="reviewer-name">Бауыржан Нұрсұлтанов</div>
+                                <div class="review-date">10.03.2024</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <span class="stars">⭐⭐⭐⭐</span>
+                            <span>8/10</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Фильмнің идеясы өте оригинальды. Қазіргі реалити-шоулардың барлығы осы фильмнен кейін пайда болған сияқты. Бірақ соңы мені қанағаттандырмады, көбірек нәрсе күттім.</p>
+                        <div class="review-helpful">
+                            <button class="helpful-btn">👍 Пайдалы (189)</button>
+                            <button class="helpful-btn">👎 Пайдалы емес (23)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review" data-rating="3">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">Д</div>
+                            <div>
+                                <div class="reviewer-name">Дархан Омаров</div>
+                                <div class="review-date">08.03.2024</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <span class="stars">⭐⭐⭐</span>
+                            <span>3/10</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Фильм мені ұнады. Идея жақсы, бірақ орындау өте баяу. Джим Керри өзіне тән комедиялық рөлдерінен алыстап, драмаға өте келе алмады. Сюжет біршама қайталанады, кейбір сәттері ұзаққа созылады.</p>
+                        <p>Фильмнің соңы мені толықтай разочаровалды. Басты герордің шешімі ешқандай логикаға сәйкес келмейді. Режиссер көрерменге көп сұрақтар қалдырып, жауап бермей кетті.</p>
+                        <div class="review-helpful">
+                            <button class="helpful-btn">👍 Пайдалы (45)</button>
+                            <button class="helpful-btn">👎 Пайдалы емес (89)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review" data-rating="2">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">М</div>
+                            <div>
+                                <div class="reviewer-name">Мадина Садыкова</div>
+                                <div class="review-date">05.03.2024</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <span class="stars">⭐⭐</span>
+                            <span>2/10</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Бұл фильм - үлкен разочарование! Идея дегеніміз не? Біреудің өмірін жасырын түсіру - бұл заңсыз! Фильм бұл мәселені этикалық тұрғыдан қарастырмайды, тек оны ойын-сауыққа айналдырады.</p>
+                        <p>Джим Керридің ойыны жасанды көрінеді. Ол қиналғанда да, қуанғанда да бір бет-ақ көрінеді. Фильмнің ритмі өте баяу, көп сәттері мәнсіз. Ешқашан қайталап көрмеген едім.</p>
+                        <div class="review-helpful">
+                            <button class="helpful-btn">👍 Пайдалы (23)</button>
+                            <button class="helpful-btn">👎 Пайдалы емес (156)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review" data-rating="4">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">Т</div>
+                            <div>
+                                <div class="reviewer-name">Тимур Айтманов</div>
+                                <div class="review-date">01.03.2024</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <span class="stars">⭐⭐⭐⭐</span>
+                            <span>4/10</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Фильмнің идеясы қызық, бірақ орындау сәтсіз. 2 сағат ішінде бірнеше күн көрсетіледі, бірақ ешқандай даму жоқ. Труманның күмәндануы бірте-бірте басталады, бірақ бұл процесс өте ұзақ.</p>
+                        <p>Фильмнің ортасындағы көп сәттері мәнсіз. Труманның күнделікті әдеттерін көру қызықсыз. Режиссер көбірек экшн және драма қосуы керек еді.</p>
+                        <div class="review-helpful">
+                            <button class="helpful-btn">👍 Пайдалы (67)</button>
+                            <button class="helpful-btn">👎 Пайдалы емес (98)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review" data-rating="9">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">Г</div>
+                            <div>
+                                <div class="reviewer-name">Гүлнәр Төлегенова</div>
+                                <div class="review-date">20.02.2024</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span>9/10</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Бұл фильм - гениалдық! 1998 жылы мұндай идея ұсыну - болашақты болжау. Қазір Instagram, TikTok, YouTube арқылы адамдар өз өмірін "шоу" етіп жатыр.</p>
+                        <p>Труманның қашу сәті - бұл бостандыққа деген ұмтылыстың символы. Әрбір адам өз "Труман шоуыннан" қашуы керек. Фильмді қайталап көруге болады!</p>
+                        <div class="review-helpful">
+                            <button class="helpful-btn">👍 Пайдалы (267)</button>
+                            <button class="helpful-btn">👎 Пайдалы емес (5)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn" onclick="changePage('prev')" disabled>← Алдыңғы</button>
+                <span class="page-info">1 бет / 1 бет</span>
+                <button class="page-btn" onclick="changePage('next')" disabled>Келесі →</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Труман Шоу фильмі туралы сайт. Барлық құқықтар қорғалған.</p>
+        <p>Жасаған: Ильхан Хайроллиев</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
